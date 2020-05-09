@@ -1,0 +1,35 @@
+/*on va agrandir notre paragraphe*/
+p{
+    font-size: 40px;
+}
+
+.slider{
+    overflow: hidden;
+}
+/*on fait une animation*/
+.slides{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: calc(500px * 5);
+    height: 720px;
+    animation: glisse 15s infinite ease;
+}
+/*on veut que nos images glissent*/
+@keyframes glisse{
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-500px);
+    }
+    66%{
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
